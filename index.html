@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Encriptador de texto </title> 
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    
+
+    </head>
+
+    <body>
+
+        <header>
+            <img class="logo" src="img/logo-uni.png" alt="Logo">         
+        </header>
+
+        <main>
+
+            <section class="seccion-entrada">
+                <div class="input-wrap">
+                    <textarea id="texto-encriptado" class="texto-encriptado" rows="8" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+
+                <div class="area-botones">
+                    <p class="texto-info">
+                        <span class="icono">  
+                        </span> Solo letras minúsculas y sin acentos
+                    </p>
+                
+                    <div id="botones" class="botones">
+                        <button id="btn" class="btn" onclick="mostrarEncriptado()">Encriptar</button>
+                        <button id="btn1" class="btn1" onclick="mostrarDesencriptado()">Desencriptar</button>
+                    </div> 
+                </div>
+            </section>
+
+            <section id="vista-mensaje" class="vista-mensaje">
+                <div>
+                    <img src="img/no-mensaje.png" alt="Ningún mensaje fue encontrado" class="img-wrap">
+                </div>
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </section> 
+
+        </main>
+        
+        <footer>
+           <p>Elaborado por Alejandra Espinoza Hernández</p>
+           <div class="link">
+            <a href="https://github.com/Ale333Hdz">
+                <img src="img/github.png" alt="github link" class="img-github"></a>
+           </div>
+
+
+        </footer>
+        
+
+    </body>
+    <script src="js/script.js"></script>
+
+</html>

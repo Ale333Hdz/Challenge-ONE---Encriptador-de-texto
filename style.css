@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    font-family: 'Dosis', sans-serif;     
+}
+
+html {
+    font-size: 100%;
+}
+
+body{
+    height: 100vh;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #D5B9D2;
+    font-family: 'Dosis', sans-serif; 
+    background-image: url(img/background.png);
+}
+
+/* Header */
+
+header {
+    padding-top: 1rem;
+    max-height: 10%;
+}
+
+.logo{
+    width: 10%;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80vh;
+    gap: 1rem;
+}
+
+/* --Entrada de texto-- */
+
+.seccion-entrada {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8rem;
+}
+
+.input-wrap {
+    display: flex;
+    height: 100%;
+    gap: 5px; 
+    background: #C7A8C4;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+textarea::placeholder {
+    opacity: 0.6;
+}
+
+.texto-encriptado {
+    font-size: xx-large;
+    display: block;
+    white-space: nowrap; 
+    width: 30ch; 
+}
+
+/* --Encriptar y Desencriptar--*/
+
+.texto-info {
+    font-size: 0.75rem;
+    margin: 1rem 0;
+}
+
+.icono {
+   display: inline-block;
+   width: 0.75rem;
+}
+
+.icono::before{
+    content: "⚝"
+}
+
+.botones {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+   
+    background: #7F5885;
+    padding: 1rem 0;
+    border-color: #7F5885;
+    border-radius: 24px;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+
+}
+
+.btn1 {
+    
+    padding: 1rem 0;
+    border-color: #7F5885;
+    border-radius: 24px;
+    width: 100%;
+    font-weight: 500;
+    background: #D5B9D2;
+}
+
+.btn1:hover {
+    background-color: #926A98;
+    cursor: pointer;
+    transform: scale(1.01);
+    color: white;
+}
+
+/* --Visualizacion de mensaje */
+
+.vista-mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -13px #7F5885;
+    padding: 2rem;
+    line-height: 120%;
+    text-align: center;
+    background: #C3A1C7;  
+}
+
+.vista-mensaje h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.img-wrap{
+    width: 80%;
+    height: auto;
+}
+
+.btn_copiar{
+    background: #926A98;
+    padding: .5rem 0;
+    border-color: #7F5885;
+    border-radius: 24px;
+    width: 35%;
+    color: white;
+    font-weight: 500;
+}
+
+.btn__copiar:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.link{
+    width: 1.5rem;
+}
+
+.img-github{
+    width: 100%;
+    height: auto;
+}
+
+ /* vista telefono */
+@media screen and (max-width: 540px) {
+    html {
+        font-size: 75%;
+    }
+
+    body {
+        padding: 0 1rem;
+    }
+
+    .seccion-entrada .botones {
+        flex-direction: column;
+    }
+}
+
+ /* vista tablet */
+@media screen and (max-width: 940px) {
+   .logo {
+        width: 7%;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    .seccion-entrada {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .vista-mensaje {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .vista-mensaje .img-wrap {
+        display: none !important;
+    }
+
+}
+
+
